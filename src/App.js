@@ -55,7 +55,7 @@ function App() {
         </div>
         <div className="video--card">
           <img src="assets/images/featured-videos-sample-2.jpg" alt="vid2" className="video--thumbnail"></img>
-          Assassin's Creed Valhalla world premiere trailer===
+          Assassin's Creed Valhalla world premiere trailer
         </div>
         <div className="video--card">
           <img src="assets/images/featured-videos-sample-3.jpg" alt="vid3" className="video--thumbnail"></img>
