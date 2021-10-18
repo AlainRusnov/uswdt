@@ -1,10 +1,12 @@
+import React, { useState } from 'react';
 import Navbar from '../src/components/navbar/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Carousel  from '../src/components/carousel/Carousel';
 import './App.css';
 import Button from '../src/components/button/Button';
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import ModalOne from '../src/components/modal/ModalOne';
+import ModalTwo from '../src/components/modal/ModalTwo';
+import ModalThree from '../src/components/modal/ModalThree';
 
 const gamesData = [
   {title:"Far Cry 6",src:"assets/images/farcry6.jpg"},
@@ -20,6 +22,12 @@ const gamesData = [
 ]
 
 function App() {
+
+  const [openModal1, setOpenModal1] = useState(false)
+  const [openModal2, setOpenModal2] = useState(false)
+  const [openModal3, setOpenModal3] = useState(false)
+
+
   return (
     <>
     <Router>
@@ -50,15 +58,18 @@ function App() {
         <h2>Featured Videos</h2>
       </div>
       <div className="featured-videos">
-        <div className="video--card">
+        <div className="video--card" onClick={() => setOpenModal1(true)}>
           <img src="assets/images/featured-videos-sample-1.jpg" alt="vid1" className="video--thumbnail" ></img>
+          { openModal1 && <ModalOne />}
         </div>
-        <div className="video--card">
+        <div className="video--card" onClick={() => setOpenModal2(true)}>
           <img src="assets/images/featured-videos-sample-2.jpg" alt="vid2" className="video--thumbnail"></img>
           Assassin's Creed Valhalla world premiere trailer
+          { openModal2 && <ModalTwo />}
         </div>
-        <div className="video--card">
+        <div className="video--card" onClick={() => setOpenModal3(true)}>
           <img src="assets/images/featured-videos-sample-3.jpg" alt="vid3" className="video--thumbnail"></img>
+          { openModal3 && <ModalThree />}
         </div>
       </div>
       <div className="button--wrapper">
