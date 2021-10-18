@@ -20,22 +20,44 @@ function Newsfeed() {
         </div>
         <div className="newsfeed--item--two">
           <div className="item--two--wrapper">
-            <img src="assets/images/news-image-sample-2.jpg" alt="news 1"></img>
+            <img src="assets/images/news-image-sample-2.jpg" alt="news 2"></img>
             <div className="item--two--desc">
               <p>October 5, 2021</p>
               <h2>Check out the new weapons</h2>
             </div>
           </div>
         </div>
+        <div className="newsfeed--item--three">
+          <div className="item--three--wrapper">
+            <div className="item--three--desc">
+              <p>September 30, 2021</p>
+              <h2>Immortals Fenyx Rising combat explained</h2>
+            </div>
+            <img src="assets/images/news-image-sample-3.jpg" alt="news 3"></img>
+          </div>
         </div>
+        <div className="newsfeed--item--four">
+          <div className="item--four--wrapper">
+            <img src="assets/images/news-image-sample-4.png" alt="news 4"></img>
+            <div className="item--four--desc">
+              <p>October 10, 2021</p>
+              <h2>Idle Restaurant Tycoon : Start your empire</h2>
+            </div>
+          </div>
         </div>
-        )
-      }
+        <div className="newsfeed--item--five">
+          <div className="item--five--wrapper">
+            <div className="item--five--desc">
+              <p>October 1, 2021</p>
+              <h2>Developer Musings : What we have in store for the future</h2>
+            </div>
+            <img src="assets/images/news-image-sample-5.jpg" alt="news 5"></img>
+          </div>
+        </div>
 
-      export default Newsfeed
+      </div>
+    </div>
+  )
+}
 
-      // <div className="newsfeed--item--three">
-      //   <img src="assets/images/news-image-sample-3.jpg" alt="news 1"></img>
-      //   <p>October 5, 2021</p>
-      //   <h2>Check out the new weapons</h2>
-      // </div>
+export default Newsfeed

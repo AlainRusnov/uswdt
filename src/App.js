@@ -44,7 +44,9 @@ function App() {
       </div>
       <Carousel data={gamesData}/>
       <div className="button--wrapper">
-        <Button label={"View All Games"} />
+        <a href="https://www.ubisoft.com/en-ca/games">
+          <Button label={"View All Games"} />
+        </a>
       </div>
     </div>
 
@@ -54,7 +56,9 @@ function App() {
       </div>
       <Newsfeed />
       <div className="button--wrapper">
+        <a href="https://news.ubisoft.com/en-ca/">
           <Button label={"All News"} />
+        </a>
       </div>
     </div>
 
@@ -83,7 +87,9 @@ function App() {
           { openModal3 && <ModalThree closeModalThree={setOpenModal3}/>}
       </div>
       <div className="button--wrapper">
+        <a href="https://www.youtube.com/channel/UCBMvc6jvuTxH6TNo9ThpYjg" rel="_blank">
           <Button label={"View All Trailers"} />
+        </a>
       </div>
     </div>
     </>
