@@ -1,18 +1,31 @@
 import React from 'react'
+import './ModalThree.css'
 
-function ModalThree() {
+function ModalThree({ closeModalThree }) {
   return (
-    <div className="modal--background">
-      <div className="modal--container">
-        <button> X </button>
-        <div className="title">
-          <h1>Featured game video</h1>
+      <div className="modal--container--three">
+        <div className="button--close--modal--three">
+          <button className="modal--button--three" onClick={() => {closeModalThree(false)} }> <i className='fas fa-times' /> </button>
         </div>
-        <div className="body">VIDEO</div>
-        <div className="footer">footer</div>
+        <div className="modal--inner-container">
+          <div className="title">
+            <h1>IMMORTALS</h1>
+            <p>Fenyx Rising Deep Dive trailer</p>
+          </div>
+          <div className="video-responsive">
+            <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zGxOuvnyNWU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 
-export default ModalThree
+export default ModalThree;
+

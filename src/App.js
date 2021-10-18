@@ -60,17 +60,17 @@ function App() {
       <div className="featured-videos">
         <div className="video--card" onClick={() => setOpenModal1(true)}>
           <img src="assets/images/featured-videos-sample-1.jpg" alt="vid1" className="video--thumbnail" ></img>
-          { openModal1 && <ModalOne />}
-        </div>
-        <div className="video--card" onClick={() => setOpenModal2(true)}>
+          </div>
+          { openModal1 && <ModalOne closeModalOne={setOpenModal1} />}
+        <div className="video--card" onClick={() => {setOpenModal2(true)}}>
           <img src="assets/images/featured-videos-sample-2.jpg" alt="vid2" className="video--thumbnail"></img>
           Assassin's Creed Valhalla world premiere trailer
-          { openModal2 && <ModalTwo />}
-        </div>
+          </div>
+          { openModal2 && <ModalTwo closeModalTwo={setOpenModal2}/>}
         <div className="video--card" onClick={() => setOpenModal3(true)}>
           <img src="assets/images/featured-videos-sample-3.jpg" alt="vid3" className="video--thumbnail"></img>
-          { openModal3 && <ModalThree />}
-        </div>
+          </div>
+          { openModal3 && <ModalThree closeModalThree={setOpenModal3}/>}
       </div>
       <div className="button--wrapper">
           <Button label={"View All Trailers"} />
