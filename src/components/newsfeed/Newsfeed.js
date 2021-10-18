@@ -6,7 +6,7 @@ function Newsfeed() {
     <div className="newsfeed--container">
       <div className="newsfeed--categories">
          <div className="newsfeed--cat">All news</div>
-         <div className="newsfeed--cat">Asassin's Creed Valhalla</div>
+         <div className="newsfeed--cat">Assassin's Creed Valhalla</div>
          <div className="newsfeed--cat">Immortals Fenyx Rising</div>
          <div className="newsfeed--cat">Far Cry 6</div>
          <div className="newsfeed--cat">Watch Dogs: Legion</div>
