@@ -14,9 +14,11 @@ function Newsfeed() {
       <div className="newsfeed--items--container">
         <div className="newsfeed--item--one">
           <img src="assets/images/news-image-sample-1.jpg" alt="news 1"></img>
-          <p>October 14, 2021</p>
-          <h2>Scott Pilgrim vs the world: The game</h2>
-          <h2>complete edition</h2>
+          <div className="item--one--desc">
+            <p>October 14, 2021</p>
+            <h2>Scott Pilgrim vs the world: The game</h2>
+            <h2>complete edition</h2>
+          </div>
         </div>
         <div className="newsfeed--item--two">
           <div className="item--two--wrapper">
@@ -29,11 +31,11 @@ function Newsfeed() {
         </div>
         <div className="newsfeed--item--three">
           <div className="item--three--wrapper">
+            <img src="assets/images/news-image-sample-3.jpg" alt="news 3"></img>
             <div className="item--three--desc">
               <p>September 30, 2021</p>
               <h2>Immortals Fenyx Rising combat explained</h2>
             </div>
-            <img src="assets/images/news-image-sample-3.jpg" alt="news 3"></img>
           </div>
         </div>
         <div className="newsfeed--item--four">
@@ -47,11 +49,11 @@ function Newsfeed() {
         </div>
         <div className="newsfeed--item--five">
           <div className="item--five--wrapper">
+            <img src="assets/images/news-image-sample-5.jpg" alt="news 5"></img>
             <div className="item--five--desc">
               <p>October 1, 2021</p>
               <h2>Developer Musings : What we have in store for the future</h2>
             </div>
-            <img src="assets/images/news-image-sample-5.jpg" alt="news 5"></img>
           </div>
         </div>
 
