@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import './Carousel.css'
 
 function Carousel({title,data}) {
 

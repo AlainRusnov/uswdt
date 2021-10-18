@@ -113,3 +113,21 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 720px) {
+  .btn--next--arrow {
+    left: 82vw;
+  }
+}
+
+ @media screen and (min-width: 720px) {
+  .btn--next--arrow {
+    left: 90vw;
+  }
+}
+
+ @media screen and (min-width: 960px) {
+  .btn--next--arrow {
+    left: 93vw;
+  }
+}

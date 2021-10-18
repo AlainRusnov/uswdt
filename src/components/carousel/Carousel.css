@@ -1,7 +1,13 @@
-.card--img {
+/* @media screen and (max-width: 960px) {
+  .btn--next--arrow {
+    left: 85vw;
+  }
+} */
+
+/* .card--img {
   width: 239px;
   height: 182px;
-}
+} */
 
 /* .slick-next {
   right: 25px;
