@@ -27,6 +27,7 @@
   padding-right: 8px;
   margin: 6px;
   line-height: 1.5rem;
+  border: none;
 }
 
 .modal--inner-container {
@@ -37,6 +38,7 @@
 }
 
 .iframe {
-  position: relative;
-  width: 100%;
+  /* position: relative; */
+  /* width: 50%;
+  height: 50%; */
 }

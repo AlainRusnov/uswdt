@@ -7,6 +7,7 @@ import Button from '../src/components/button/Button';
 import ModalOne from '../src/components/modal/ModalOne';
 import ModalTwo from '../src/components/modal/ModalTwo';
 import ModalThree from '../src/components/modal/ModalThree';
+import Newsfeed from '../src/components/newsfeed/Newsfeed';
 
 const gamesData = [
   {title:"Far Cry 6",src:"assets/images/farcry6.jpg"},
@@ -36,6 +37,7 @@ function App() {
           <Route path='/' exact />
         </Switch>
     </Router>
+
     <div className="games--wrapper">
       <div className="explore--title">
         <h2>explore more games</h2>
@@ -45,14 +47,17 @@ function App() {
         <Button label={"View All Games"} />
       </div>
     </div>
+
     <div className="news--container">
       <div className="explore--title">
         <h2>Latest News</h2>
       </div>
+      <Newsfeed />
       <div className="button--wrapper">
           <Button label={"All News"} />
       </div>
     </div>
+
     <div className="featured--container">
       <div className="explore--title">
         <h2>Featured Videos</h2>
@@ -60,16 +65,21 @@ function App() {
       <div className="featured-videos">
         <div className="video--card" onClick={() => setOpenModal1(true)}>
           <img src="assets/images/featured-videos-sample-1.jpg" alt="vid1" className="video--thumbnail" ></img>
-          </div>
+          <h2>Watch Dogs: Legion</h2>
+          <p>Gameplay overview</p>
+        </div>
           { openModal1 && <ModalOne closeModalOne={setOpenModal1} />}
         <div className="video--card" onClick={() => {setOpenModal2(true)}}>
           <img src="assets/images/featured-videos-sample-2.jpg" alt="vid2" className="video--thumbnail"></img>
-          Assassin's Creed Valhalla world premiere trailer
-          </div>
+          <h2>Assassin's Creed Valhalla</h2>
+          <p>World premiere trailer</p>
+        </div>
           { openModal2 && <ModalTwo closeModalTwo={setOpenModal2}/>}
         <div className="video--card" onClick={() => setOpenModal3(true)}>
           <img src="assets/images/featured-videos-sample-3.jpg" alt="vid3" className="video--thumbnail"></img>
-          </div>
+          <h2>Immortals Fenyx Rising</h2>
+          <p>Deep dive trailer</p>
+        </div>
           { openModal3 && <ModalThree closeModalThree={setOpenModal3}/>}
       </div>
       <div className="button--wrapper">
